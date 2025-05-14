@@ -1,6 +1,7 @@
 # VoiceToText
 
 A simple Windows tool to record audio by mouse click or hotkey, convert it to text, and copy the recognized text to the clipboard with one click.
+![Screenshot](Screenshot.png)
 
 ## Features
 
