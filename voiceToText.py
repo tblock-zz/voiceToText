@@ -10,6 +10,7 @@ import getpass
 import os
 import pyperclip # Für die Zwischenablage
 import keyboard  # Für globale Tasten-Events
+import locale
 #-------------------------------------------------------------------------------
 # --- Konstanten ---
 SAMPLE_RATE = 16000
@@ -18,7 +19,12 @@ DEVICE_INDEX = None
 AUDIO_FORMAT_WIDTH = 2
 
 # default is german
-langSelector = "de" 
+systemLang = locale.getdefaultlocale()[0]
+langSelector = "en"
+if systemLang:
+    langCode = systemLang.split('_')[0]
+    if langCode == 'de':
+        langSelector = langCode
 
 lang = {
     "de": {
