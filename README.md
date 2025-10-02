@@ -46,5 +46,3 @@ pip install git+https://github.com/openai/whisper.git
 - For best results, use an external or built-in microphone.
 
 ---
-
-*This tool is intended for private use and as an example for simple speech-to-text applications.*
